@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(to right, #f44336, #2196f3); /* add gradient effect */
+}
+table {
+  width: 300px; /* Increase the width of the table */
+  height: 300px; /* Increase the height of the table */
+  border-collapse: collapse;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #f44336, #2196f3); /* add gradient effect */
+  box-shadow: 10px 10px 20px #333; /* add shadow effect */
+}
+td {
+  width: 100px; /* Increase the width of the cells */
+  height: 100px; /* Increase the height of the cells */
+  border: 5px solid #fff; /* Increase the border size and change the color */
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px; /* Increase the font size */
+  font-weight: bold;
+  transition: all 0.2s ease-in-out; /* add transition effect */
+}
+/* Add a hover effect to the cells */
+td:hover {
+  background: linear-gradient(to right, #f44336, #2196f3); /* add gradient effect */
+  color: #fff;
+  transform: scale(1.1); /* scale up the cells on hover */
+}
+
+/* Add a background color to the table */
+table {
+  background-color: #fff;
+}
+/* Add a background color and padding to the score board */
+#score {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px; /* Add rounded corners */
+}
+#score p {
+  font-size: 25px; /* Increase font size */
+  margin: 10px 0;
+}
+#score span {
+  font-size: 30px; /* Increase font size */
+  font-weight: bold;
+}
+  
+/* Add a background color and padding to the reset buttons */
+#reset-game, #reset-score {
+  margin-top: 20px;
+  padding: 20px 40px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#reset-game:hover, #reset-score:hover {
+  background-color: #555;
+  animation: pulse .5s ease-in-out infinite; /* Add pulse animation */
+}
